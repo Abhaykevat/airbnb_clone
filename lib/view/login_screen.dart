@@ -53,6 +53,7 @@
 //     }
 // }
 
+import 'package:airbnb_clone/global.dart';
 import 'package:airbnb_clone/view/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -159,7 +160,13 @@ class _LoginScreenState extends State<LoginScreen> {
                             width: 350,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
-                                onPressed: (){}, child: Text("Log In",style: TextStyle(color: Colors.white,fontSize: 20),)),
+                                onPressed: () async
+                                {
+                                  if(_formKey.currentState!.validate())
+                                    {
+                                      await userViewModel.login(_emailTextEditingController.text.trim(),_passwordTextEditingController.text.trim());
+                                    }
+                                }, child: Text("Log In",style: TextStyle(color: Colors.white,fontSize: 20),)),
                           ),
                         ),
 

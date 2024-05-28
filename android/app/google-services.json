@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "776455833660",
+    "project_id": "airbnb-clone-2024-1747d",
+    "storage_bucket": "airbnb-clone-2024-1747d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776455833660:android:d1d143568d5804f8ec9b39",
+        "android_client_info": {
+          "package_name": "com.abhaykevat.airbnbclone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGr7EI8P_6dPDWmWuYKRWHi_Hc8rfncj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
