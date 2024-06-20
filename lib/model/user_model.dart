@@ -137,7 +137,7 @@ class UserModel extends ContactModel{
     bookings!.add(booking);
     //await addBookingConversatiion(booking);
   }
-<<<<<<< HEAD
+
    List<DateTime> getAllBookedDates()
    {
     List<DateTime> allBookedDates=[];
@@ -151,7 +151,4 @@ class UserModel extends ContactModel{
     });
     return allBookedDates;
    }
-=======
->>>>>>> 36a9a679ca7b97e1dd3da6b455b59a81d40ccbae
-
 }
