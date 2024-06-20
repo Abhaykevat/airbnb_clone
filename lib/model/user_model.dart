@@ -137,5 +137,18 @@ class UserModel extends ContactModel{
     bookings!.add(booking);
     //await addBookingConversatiion(booking);
   }
+   List<DateTime> getAllBookedDates()
+   {
+    List<DateTime> allBookedDates=[];
+
+    myPostings!.forEach((posting) 
+    {
+      posting.bookings!.forEach((booking) 
+      {
+        allBookedDates.addAll(booking.dates!);
+      });
+    });
+    return allBookedDates;
+   }
 
 }
